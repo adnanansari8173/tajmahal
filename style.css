@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans";
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("../images/rowan-heuvel-sAB4BWrQ4Y4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav .logo {
+  width: 25%;
+  text-align: center;
+}
+
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+main {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  text-shadow: 1px 1px 5px black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+
+section .btnone {
+  background: #fff;
+  color: #000;
+}
+.btnone:hover {
+  background: #00b894;
+  color: white;
+}
+section .btntwo {
+  background: #00b89300;
+  color: white;
+}
+.btntwo:hover {
+  background: #00b894;
+  color: white;
+}
+.change_content::after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+@keyframes changetext {
+  0% {
+    content: "Darjeeling";
+  }
+  35% {
+    content: "agra";
+  }
+  35% {
+    content: "jaipur";
+  }
+  60% {
+    content: "kerala";
+  }
+  80% {
+    content: "delhi";
+  }
+  100% {
+    content: "mumbai";
+  }
+}
